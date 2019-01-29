@@ -47,6 +47,9 @@ if m and not a == 12:
 #   takes three arguments, a condition, something to do if it's true, and something to do if it's false. It collapses the if else structure into one line. For example:
 b = 1 if a == 12 else 2
 #   This statement sets the value of b to be 1 if a is 12, and otherwise sets it equal to 2. As you can see this is significantly more compact than a full if else statement.
+#   Conditional statements can also be combined with the "and" and "or" operators. For example:
+if b == 1 or b == 2:
+    pass
 #       Let us finally make our first usable program. We shall make a program that flips a coin and prints the result. Firstly we must get a random number (our coin flip):
 from random import randint
 coin = randint(0, 1)
