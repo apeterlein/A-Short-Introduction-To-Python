@@ -1,6 +1,6 @@
 # A Short Introduction To Python
 # FILE 2 - FUNCTIONS
-# Adam Peterlein - Last updated 2018-06-27 with python 3.6.5 and Visual Studio 15.7.1.
+# Adam Peterlein - Last updated 2019-01-28 with python 3.6.5 and Visual Studio 15.7.1.
 # Any questions, suggestions, or comments welcome and appreciated.
 
 #       Python allows for the defintion of functions, little peices of code outside the main body that one can invoke anywhere in the file. Functions are

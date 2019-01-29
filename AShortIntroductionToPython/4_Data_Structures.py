@@ -1,6 +1,6 @@
 # A Short Introduction To Python
 # FILE 4 - DATA STRUCTURES
-# Adam Peterlein - Last updated 2018-06-27 with python 3.6.5 and Visual Studio 15.7.1.
+# Adam Peterlein - Last updated 2019-01-28 with python 3.6.5 and Visual Studio 15.7.1.
 # Any questions, suggestions, or comments welcome and appreciated.
 
 #       In previous files we have discussed the basic types (integers, floats, strings, and booleans), but we have not yet discussed composite
@@ -49,7 +49,7 @@ print(a[::-1]) # Prints "gnirtstset" the string a backwards.
 a = a[0] + 'a' + a[2:]
 #   The '+' operator, recall, concatenates strings. The a[0] returns the first letter of our string, the 'a' is the letter we hope to insert, and the
 #   a[2:] is the rest of the string after the replacement. We could define a function to replace one letter in any given string:
-def replace(strng, indx, letter):
+def replace(strng: str, indx: int, letter: str) -> str:
     return strng[:indx] + letter + strng[indx+1:]
 # SECTION 2 - LISTS
 #       Lists operate much like strings, but instead of being sequences of characters they are sequences of whatever one might like. Lists are defined
@@ -69,3 +69,30 @@ t = (3, 1) # this is equivalent to t = 3, 1
 #   The main difference between lists and tuples is that tuples are immutable like strings. Recall that immutable means they cannot be changed once created,
 #   you have to create them all over again. Tuples are typically used in conjunction with functions in the following way. Say you have a function that takes a magnitude
 #   and direction and returns the x and y components
+from math import sin, cos
+
+def XandY(dir: float, mag: float) -> (int, int):
+    x = mag*cos(dir)
+    y = mag*sin(dir)
+    return x, y
+#   We could also have simply written "return mag*cos(dir), mag*sin(dir)"
+
+print(XandY(2.5, 5))
+#   Now say we have a tuple r
+r = (1.2, 15)
+#   And we want to feed this tuple directly into the function XandY. We could do this with indexing:
+XandY(r[0], r[1])
+#   Or we could take advantage of the operator "*" which "unpacks" a tuple into it's individual values.
+xy = XandY(*r)
+print(xy)
+# SECTION 4 - Dictionaries
+#       Dictionaries are unlike any of the other data structures we've encountered so far in that they are not simply collections of individual elements (characters in the case of a string
+#   or anything in the case of lists and tuples). Instead, dictionaries consist of name and value pairs. The name is a string which is used as the indentifier of the value, which can be almost
+#   anything. For example:
+d = {'a': 3, 'b': 'test', 'c': 1.2}
+#   We have just created a new dictionary, d, and put into it the entries "a", which contains 3; "b", which contains the string "test"; and "c", which contains the number 1.2. To lookup a value
+#   we simply use its key.
+d['a'] # returns 3
+
+#   End of file 4. Possible exercises:
+#   TODO: Excercises for file 4.
