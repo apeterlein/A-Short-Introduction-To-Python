@@ -57,9 +57,9 @@ start_time = time()
 #   "start_time" is now a floating point number containing the number of seconds since the stroke of midnight, January 1st, 1970. Now for our loop:
 while True:
 #   An infinite loop! We'll need a break statement somewhere or the interpreter will just get stuck right here.
-    if time() - start_time == 2:
+    if time() - start_time > 2:
         break
-#   If the current time minus the time we started is 2, then we break out of the loop. Infinite loops, in general, are considered bad form. Here's a little bit of a nicer way we could
+#   If the current time minus the time we started is greater than 2, then we break out of the loop. Infinite loops, in general, are considered bad form. Here's a little bit of a nicer way we could
 #   write the same thing:
 start_time = time()
 while time() - start_time < 2:
