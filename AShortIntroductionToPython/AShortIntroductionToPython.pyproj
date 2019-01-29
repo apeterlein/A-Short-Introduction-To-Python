@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d3fb76aa-a986-43aa-b8ec-247a41c59db5</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>9_Problem_3.py</StartupFile>
+    <StartupFile>4_Data_Structures.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -36,16 +36,22 @@
     <Compile Include="5_Loops.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="6_Intro_To_Euler_Problems.py">
+    <Compile Include="8_Intro_To_Euler_Problems.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="7_Problem_1.py">
+    <Compile Include="6_Classes.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="8_Problem_2.py">
+    <Compile Include="7_Meta_Functions.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="9_Problem_3.py">
+    <Compile Include="9_Problem_1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="10_Problem_2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="11_Problem_3.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
