@@ -11,10 +11,11 @@ from time import time
 class Student:
 #   This is the beginning of my class. All the indented blocks after this are part of the student class. Traditionally class names are capitalized.
 #   Inside my student class I'm going to define functions which we can do on our student objects.
-    def __init__(self: Student, name: str, grade: int) -> None:
+    def __init__(self, name: str, grade: int) -> None:
 #   This is kind of an odd piece of code. I've made a function inside of my student class called __init__ (notice the double underscores, called dunderscores in Python). What does it do?
 #   Well this is what is called the "initializer" and it is the function we call when we first create a new student object. More on this later, for right now notice it takes three arguments,
-#   self, name, and grade. The self argument is special. We don't pass this argument when we call the function, it get's passed automatically. It represents the current object. We can add
+#   self, name, and grade. The self argument is special. We don't pass this argument when we call the function, it get's passed automatically. It represents the current object. Notice there
+#   is not type hint for self. That is because the type of self is "Student," but if we try to assign "Student" as a  We can add
 #   attributes to the "self" object as follows:
         self.name = name
         self.grade = grade
@@ -23,7 +24,7 @@ class Student:
 #   Recall that time() returns the seconds since January 1st, 1970. Notice the dunderscore in the name of our variable "__created"? This tells Python that the variable __created is private,
 #   meaning we can't access it other than from methods we define here, inside the class. Please note that __init__ functions always return None.
 #   Now let us define another method.
-    def nameBackwards(self: Student) -> str:
+    def nameBackwards(self) -> str:
 #   What I want this method to do is return the name of the student, but backwards. Recalling our days with iterables we can do this fairly easily:
         return self.name[::-1]
 #   Recall that when we use square brackets in Python the first number is the start, then a colon, then the next number is the end. Leaving both blank gives us the entire iterable, in this
@@ -45,7 +46,7 @@ if __name__ == "__main__":
     d = Student("Jill Smith", 11)
     print(d.name)
     print(d.grade)
-    print(d.nameBackwards)
+    print(d.nameBackwards())
 
 #   End of file 6. Possible exercises:
 #   1.  Add a method to our student class that returns the time it was created.
