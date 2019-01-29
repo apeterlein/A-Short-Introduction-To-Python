@@ -11,7 +11,7 @@
 #   2.  Lists - The most commonly used data structure, a list is simply an ordered collection of any number of values (including one or none).
 #   3.  Tuples - Another ordered collection of several elements, we shall discuss the differences between lists and tuples a little later.
 #   4.  Dictionaries - An unordered collection of key and value pairs.
-#   And the two others are:
+#   And the two others we won't discuss are:
 #   5.  Sets - Unordered collections of elements.
 #   6.  Frozen Sets - Like sets, but a frozen set cannot be changed once it is declared. It is what's called "immutable." More on this later.
 # SECTION 1 - STRINGS
@@ -19,7 +19,8 @@
 #   a character itself is not a type in python, but rather is represented by a string of length 1.
 a = "teststring"
 #   In the example above we have defined a string. In this string the "t" character occupies the 0th index, the "e" character occupies the 1st index,
-#   the "s" character occupies the 2nd index, and etc. We can access a single character from the string by index using square brackets:
+#   the "s" character occupies the 2nd index, and etc. Any data structure with order like this we call a "iterable." We can access a single character 
+#   from the string by index using square brackets:
 print(a[0])
 #   This prints the 0th index: "t." Likewise:
 print(a[4])

@@ -36,7 +36,10 @@
     <Compile Include="5_Loops.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="8_Intro_To_Euler_Problems.py">
+    <Compile Include="8_Generators.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="9_Intro_To_Euler_Problems.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="6_Classes.py">
@@ -45,13 +48,13 @@
     <Compile Include="7_Meta_Functions.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="9_Problem_1.py">
+    <Compile Include="10_Problem_1.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="10_Problem_2.py">
+    <Compile Include="11_Problem_2.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="11_Problem_3.py">
+    <Compile Include="12_Problem_3.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
