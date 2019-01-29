@@ -1,6 +1,6 @@
 # A Short Introduction To Python
 # FILE 1 - INTRODUCTION
-# Adam Peterlein - Last updated 2018-06-27 with python 3.6.5 and Visual Studio 15.7.1.
+# Adam Peterlein - Last updated 2019-01-29 with python 3.6.5 and Visual Studio 15.7.1.
 # Any questions, suggestions, or comments welcome and appreciated.
 
 # Suggested prerequisits:
@@ -13,8 +13,8 @@
 #   1.  Provide a reader who is a complete beginner to python with a complete foundation of python programming.
 #   2.  Teach a python-like thought process to help the reader create effecient python code.
 #   2.  This is not an exhaustive reference on python. Not by a longshot. It is simply to give a good solid introduction and get
-#       students to a level where they can comfortably write python programs. As such, a number of topic are not included, including
-#       classes, file io, threading, python as glue, and many more. The interested student is intended to seek out further resources.
+#       students to a level where they can comfortably write python programs. As such, a number of topics are not included, including
+#       file io, threading, python as glue, and many more. The interested student is intended to seek out further resources.
 #       If you contact me with your specific learning desires I would be more than happy to point you to a good learning resource if
 #       I know of one thaty suits your needs.
 #   3.  Inspire a love of python. Python is a very popular programming language, and for good reason. There are a lot of reasons
