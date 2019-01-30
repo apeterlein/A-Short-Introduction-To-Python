@@ -1,5 +1,5 @@
 # A Short Introduction To Python
-# FILE 9 - INTRO TO EULER PROBLEMS
+# FILE 10 - PROBLEM 1
 # Adam Peterlein - Last updated 2019-01-29 with python 3.6.5 and Visual Studio 15.7.1.
 # Any questions, suggestions, or comments welcome and appreciated.
 
