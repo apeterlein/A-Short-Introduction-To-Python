@@ -13,6 +13,7 @@
 #   our methods for finding the correct answer and to check the answer that we get. To that end we first
 #   import a timer from the time module.
 from time import perf_counter as timer
+from typing import Callable
 
 #   A list of the correct answers to problems, in order. No cheating!
 answers = [
@@ -25,7 +26,8 @@ answers = [
 #   that generates the answer, and the second is the number of the problem (beginning from 1) so we can
 #   check our answers.
 class Problem:
-    def __init__(self, fun: function, num: int) -> None:
+    def __init__(self, fun: Callable[None], num: int) -> None:
+#   Callable[None]
         self.fun = fun
         self.num = num
 #   Our init function is very simple. It just takes the function and the number and attaches them to the

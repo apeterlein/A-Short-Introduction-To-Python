@@ -61,13 +61,15 @@ randint(1, 10)
 from random import randint as random_number
 random_number(1, 10)
 #   Strictly speaking, imported modules are not required to be at the top of a python file, but it is good 
-#   style to put them there. You may additionally notice that unlike some programming languages, python does 
-#   not require any sort of marker to end a statement (like ";" in C), but rather python uses the linebreak 
-#   itself as the end of the statement. This is called "syntactically significant whitespace" (we will discuss 
-#   how other whitespace is used in python later) and whether significant whitespace is clever and intuitive, 
-#   or a horrible abomination is the subject of heated debate amongst certain internet communities. The bottom 
-#   line, however, is that you must be careful with linebreaks and tabs in python. A statement can be broken 
-#   into several lines with a "\" like:
+#   style to put them there. Modules represent python files that exist somewhere (at least in principle). When
+#   you import them you run that file, and after the file is run you can use anything defined therein. One can
+#   also import one's own python files. We will so so much later in the tutorial. You may additionally notice 
+#   that unlike some programming languages, python does  not require any sort of marker to end a statement (like 
+#   ";" in C), but rather python uses the linebreak itself as the end of the statement. This is called 
+#   "syntactically significant whitespace" (we will discuss  how other whitespace is used in python later) and 
+#   whether significant whitespace is clever and intuitive, or a horrible abomination is the subject of heated 
+#   debate amongst certain internet communities. The bottom-line, however, is that you must be careful with 
+#   linebreaks and tabs in python. A statement can be broken into several lines with a "\" like:
 random_number(1, \
               10)
 #   In python we can write something to the console relatively easily using the "print" method. For example:
@@ -76,7 +78,7 @@ print(random_number(1, 10))
 if __name__ == "__main__":
     # Python code here
     pass
-#   This line is for python files that can be used either as modules, or as standalone files. The code 
+#   This line is for python files that can be used either as modules, or run directly, on its own. The code 
 #   within the if statement will only be executed if the file it is contained within is run directly, 
 #   and not if the file is imported. The "pass" below it is included because python does not like empty 
 #   if statements. The "pass" operater does nothing, it is a so-called "null operator." It's inclusion 
