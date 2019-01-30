@@ -26,8 +26,8 @@ answers = [
 #   that generates the answer, and the second is the number of the problem (beginning from 1) so we can
 #   check our answers.
 class Problem:
-    def __init__(self, fun: Callable[None], num: int) -> None:
-#   Callable[None]
+    def __init__(self, fun: Callable[[], float], num: int) -> None:
+#   Callable[[], float] just means the variable fun is a function that takes no inputs, and spits out a float.
         self.fun = fun
         self.num = num
 #   Our init function is very simple. It just takes the function and the number and attaches them to the
