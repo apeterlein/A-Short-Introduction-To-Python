@@ -7,7 +7,7 @@
 #   because modules in python can't start with numbers. The work-around is to use this slightly
 #   weird looking version of import.
 euler = __import__("9_Intro_To_Euler_Problems")
-#   This statement is equivalent to:
+#   This statement is essentially equivalent to:
 # import 9_Intro_To_Euler_Problems as euler
 
 # PROBLEM STATEMENT

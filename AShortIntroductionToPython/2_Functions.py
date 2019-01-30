@@ -54,4 +54,4 @@ def sqrt(i: int) -> float:
 #   End of file 2. Possible exercises:
 #   1.  Create a function that takes two inputs and returns their difference.
 #   2.  Generate a random number between 50 and 100 and print that number divided by 20.
-#   2.  Create a fucntion that takes two integers and returns the string equivelent of their sum.
+#   3.  Create a fucntion that takes two integers and returns the string equivelent of their sum.
