@@ -61,6 +61,30 @@ if __name__ == "__main__":
     print(d.grade)
     print(d.nameBackwards())
 
+#   There are a few more kinds of functions you might see in a class. To illustrate this
+#   let's define a new class called Point:
+class Point:
+#   First we'll define our init function like before:
+    def __init__(self, x: float, y: float):
+        self.x = x
+        self.y = y
+#   Now we want to define what happens when the user tries to convert a point into a string
+    def __str__(self) -> str:
+        return "(" + str(self.x) + ", " + str(self.y) + ")"
+#   Now whenever we use the str() function on a point we'll get back (x,y), as one might expect.
+#   But there are other things we can do too! We can define what happens when we add to points
+#   together with the + operator:
+    def __add__(self, other):
+        return (self.x + other.x, self.y + other.y)
+#   Let's see this new class in action:
+
+if __name__ == "__main__":
+    s = Point(1,3)
+    print(s)
+    print(s + Point(2,1))
+#   There are a few other functions we could define like this too, such as __mul__ for the "*" operator,
+#   __pow__ for the "**" operator, and __mod__ for the "%" operator. A complete list can be found online.
+
 #   End of file 6. Possible exercises:
 #   1.  Add a method to our student class that returns the time it was created.
 #   TODO: Add more exercises to file 6.
