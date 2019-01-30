@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d3fb76aa-a986-43aa-b8ec-247a41c59db5</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>7_Meta_Functions.py</StartupFile>
+    <StartupFile>8_Generators.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
