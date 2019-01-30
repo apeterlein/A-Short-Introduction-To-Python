@@ -35,11 +35,12 @@
 # SECTION 1 - MODULES
 #       Python is what is called an "interpreted language," meaning when you run a python file a program 
 #   called the "interpreter" takes the file line by line and translates what is contained within into 
-#   something the computer can understand. This is contrasted with compiled programming languages - such as 
-#   C or fortran - where a program must be compiled (i.e. translated into a form the computer can 
-#   understand) beforehand. The rigors of the python interpreter will not be discussed in this document, as
-#   it is considered beyond it's scope, but an interested reader is encouraged to seek out further 
-#   information.
+#   something the computer can understand (except lines, like these, that begin with a #. Those the 
+#   interpreter ignores; they're just for human readers). This is contrasted with compiled programming 
+#   languages - such as C or fortran - where a program must be compiled (i.e. translated into a form the 
+#   computer can understand) beforehand. The rigors of the python interpreter will not be discussed in 
+#   this document, as it is considered beyond it's scope, but an interested reader is encouraged to seek 
+#   out further information.
 #       The first thing you may encounter at the the top of a python file are imported modules. These lines 
 #   take a form similar to the following:
 import random
